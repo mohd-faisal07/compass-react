@@ -48,21 +48,19 @@
 }
 
 .compass>.khibla-div {
-
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform 0.1s ease-out;
+  z-index: 999;
 }
 
 
 .compass>.khibla-div>.khibla-img {
-  position: fixed;
-  width: 30%;
-  height: 30%;
+  width: 50%;
+  height: 50%;
   transform: rotate(90deg);
-  z-index: 999;
 }
 
 .start-btn {

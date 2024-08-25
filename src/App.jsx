@@ -108,12 +108,7 @@ export default function CipherCompass() {
       <div className="compass">
         <div className="arrow" />
         <div className="khibla-div">
-          <img
-            src={qiblaCompass}
-            alt="kibla picture"
-            className="khibla-img"
-            style={{ transform: compassCircleTransformStyle }}
-          />
+          <img src={qiblaCompass} alt="kibla picture" className="khibla-img" />
         </div>
         <div
           className="compass-circle"
