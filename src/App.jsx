@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useGeolocated } from "react-geolocated";
 
 import "./App.css";
+import qiblaCompass from "../images/qiblaCompass.png";
 
 export default function CipherCompass() {
   const { coords, isGeolocationAvailable, isGeolocationEnabled } =
@@ -103,13 +104,12 @@ export default function CipherCompass() {
   console.log("coords:", coords);
   return (
     <div className="App">
-      <div>myPointStyle:{myPointStyle}</div>
-      <div>pointDegree:{pointDegree}</div>
-      <div>coords?.latitude:{coords?.latitude}</div>
-      <div>coords?.longitude:{coords?.longitude}</div>
-      <h1>Hello CodeSandbox</h1>
+      <h1>Khibla Finder</h1>
       <div className="compass">
         <div className="arrow" />
+        <div className="khibla-div">
+          <img src={qiblaCompass} alt="kibla picture" className="khibla-img" />
+        </div>
         <div
           className="compass-circle"
           style={{ transform: compassCircleTransformStyle }}

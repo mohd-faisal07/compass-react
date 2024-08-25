@@ -46,3 +46,28 @@
   border-radius: 50%;
   transition: opacity 0.5s ease-out;
 }
+
+.compass>.khibla-div {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out;
+  z-index: 999;
+}
+
+
+.compass>.khibla-div>.khibla-img {
+  width: 30%;
+  height: 30%;
+  transform: rotate(90deg);
+}
+
+.start-btn {
+  border: 2px solid #000;
+  background: #000;
+  color: white;
+  border-radius: 9px;
+  margin-top: 10px;
+}
